@@ -13,7 +13,7 @@ il contenuto della scatola.
 
 ![variabili](./variabili.png)
 
-```{code-block} shell
+```{code} python
 >>> x=10
 >>> y=3
 >>> x+y
@@ -37,11 +37,11 @@ TypeError: can only concatenate str (not "int") to str
 Una variabile viene creata (_inizializzata_) la prima volta che le
 viene assegnato un valore, con l'operatore `=`.
 
-```{warning} Attenzione
+:::{warning} Attenzione
 Non confondere l'operatore di _assegnazione_ `=` con l'uguaglianza matematica.
 
 Ad esempio, `x=x+1` ha perfettamente senso se pensata come assegnazione (assegna ad `x` il valore corrente di `x`, aumentato di 1), ma è un'espressione impossibile dal punto di vista matematico.
-```
+:::
 
 Per quanto riguarde i nomi delle variabili, hai abbastanza libertà
 nella scelta, con poche limitazioni:
@@ -54,7 +54,7 @@ Ricorda che maiuscole e minuscole sono a tutti gli effetti lettere
 diverse, quindi `base` e `Base` sono due nomi di due variabili
 distinte.
 
-```{warning} Da grandi poteri, derivano grandi responsabilità
+:::{warning} Da grandi poteri, derivano grandi responsabilità
 
 Avere libertà di scelta nel nome delle variabili, non significa che
 scelgliere nomi a caso per le variabili sia una buona idea!
@@ -62,6 +62,4 @@ scelgliere nomi a caso per le variabili sia una buona idea!
 Ecco alcune semplici regole che è bene tenere a mente:
 - usare nomi di variabili che _descrivono_ cosa rappresentano rende il codice autoesplicativo (`A=b*h` vs. `area=base*altezza`)
 - usa sempre nomi in minuscolo, e separa le parole con un underscore `_` (`Arett` vs. `area_rettangolo`)
-```
-
-
+:::

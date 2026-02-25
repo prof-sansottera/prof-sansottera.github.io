@@ -32,17 +32,15 @@ l'interprete da riga di comando (le modalità dipendono dal sistema
 operativo che stai utilizzando e dal tipo di installazione di Python
 che hai a disposizione).
 
-```{warning}
+:::{warning} Attenzione
 In laboratorio, al momento, il modo più comodo è quello di aprire
 l'IDE Thonny e usare la shell integrata.
 
 Cerchiamo di installare qualcosa di meglio appena possibile.
-
-
-```
+:::
 
 L'interprete Python si presenta (più o meno) così
-```
+```{code} bash
 Python 3.13.5 (main, Jun 25 2025, 18:55:22) [GCC 14.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
@@ -58,7 +56,7 @@ che Python è pronto e aspetta istruzioni!
 ## Dati Numerici
 
 Anzitutto, puoi usare Python come una calcolatrice
-```
+```{code} python
 >>> 3+4
 7
 >>> 3-4
@@ -73,19 +71,18 @@ Nessuna sorpresa fino a qui, Python sa fare le quattro operazioni.
 
 Se ti ricordi, quando hai imparato a fare le divisioni, prima di usare i numeri con la virgola, calcolavi il _quoziente_ e il _resto_. Python sa fare anche questo, ma devi proprio dirgli che vuoi fare le divisioni in quel modo
 
-```
+```{code} python
 >>> 3//4
 0
 >>> 3%4
 3
-
 ```
 Gli operatori `//` e `%` servono proprio a calcolare la _divisione
 intera_ e il _resto_.
 
 
 Un'altra operazione che Python sa fare è l'elevamento a potenza
-```
+```{code} python
 >>> 2**3
 8
 >>> 3**3
@@ -106,12 +103,11 @@ Ad esempio per calcolare le espressioni
 \left(4-\frac{2}{9}\right)}{\left(3-\frac{1}{7}\right)}+\left(2\cdot3\right)^{2}
 \end{align*}
 mi basta scrivere
-```
+```{code} python
 >>> (2-1/5)-(4-2/9)/(3-1/7)+(2*3)**2
 36.477777777777774
 >>> ((2-1/5)-(4-2/9))/(3-1/7)+(2*3)**2
 35.30777777777778
-
 ```
 
 Le operazioni vengono calcolate secondo un ordine di precedenza:
@@ -123,7 +119,7 @@ Le operazioni vengono calcolate secondo un ordine di precedenza:
 Senza entrare in troppi dettagli tecnici, sappi che in Python ci sono
 due tipi fondamentali di numeri: gli *interi* (`int`) e i *numeri con
 la virgola* (`float`).
-```
+```{code} python
 >>> type(3)
 <class 'int'>
 >>> type(4)
@@ -152,7 +148,7 @@ dire a Python che voglio trattare una sequenza di caratteri
 (carattere, parola o frase) come una stringa devo racchiuderla tra
 virgolette singole o doppie (`'` o `"`).
 
-```
+```{code} python
 >>> 'ape'
 'ape'
 >>> "ape"
@@ -183,7 +179,7 @@ operazioni `+` e `*`, quando coinvolgono delle stringhe, assumono un
 significato completamente diverso da quello che hanno con i numeri
 visti in precedenza.
 
-```
+```{code} python
 >>> 'ciao' + 5
 Traceback (most recent call last):
   File "<python-input-17>", line 1, in <module>
