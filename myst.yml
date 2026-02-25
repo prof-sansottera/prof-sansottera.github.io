@@ -36,6 +36,7 @@ project:
         - file: 05-laboratorio/3-equazioni_grado_1.ipynb
         - file: 05-laboratorio/4-equazioni_grado_2.ipynb
         - file: 05-laboratorio/5-frazioni.ipynb
+        - file: 05-laboratorio/6-data.md
     
 site:
   template: book-theme
